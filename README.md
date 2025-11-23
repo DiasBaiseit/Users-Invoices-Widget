@@ -1,10 +1,54 @@
-<<<<<<< HEAD
-# Users-Invoices-Widget
-Users Invoices Widget
-=======
-# Vue 3 + TypeScript + Vite
+# Users Invoices Widget
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Приложение для управления пользователями и их инвойсами.  
+Реализовано с использованием Vue 3, Pinia.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
->>>>>>> 3839f8c (init)
+---
+
+## Функционал
+
+## Пользователи
+- Просмотр списка пользователей с поиском по имени и email.
+- Обновление списка пользователей с сервера.
+- Переход к детальной информации пользователя.
+- Редактирование информации пользователя (имя, email, телефон).
+
+## Детали пользователя
+- Просмотр полной информации о пользователе:
+  - Имя, email, телефон, сайт
+  - Адрес (улица, город, квартира)
+  - Компания
+- Переход к редактированию пользователя.
+- Переход к списку инвойсов пользователя.
+
+## Инвойсы
+- Просмотр списка инвойсов пользователя.
+- Создание нового инвойса:
+  - Номер, дата, сумма, статус, описание
+- Переход к редактированию инвойса.
+- Удаление инвойса.
+
+---
+
+## Технологии
+
+- Vue 3
+- TypeScript
+- Pinia
+- Vue Router
+- Axios
+
+---
+
+## Установка и запуск
+
+1. Клонируйте репозиторий:
+
+git clone https://github.com/DiasBaiseit/Users-Invoices-Widget.git
+cd Users-Invoices-Widget
+
+npm install
+
+npm run dev
+
+http://localhost:5173
