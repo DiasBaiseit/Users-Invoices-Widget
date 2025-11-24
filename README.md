@@ -42,8 +42,6 @@
 
 ## Установка и запуск
 
-1. Клонируйте репозиторий:
-
 git clone https://github.com/DiasBaiseit/Users-Invoices-Widget.git
 cd Users-Invoices-Widget
 
@@ -52,3 +50,18 @@ npm install
 npm run dev
 
 http://localhost:5173
+
+## Сборка виджета
+
+npm run build
+
+## После сборки появляются папка dist
+
+dist/users-widget.umd.js
+dist/users-invoices-widget.css
+
+## Запуск локально
+
+npx serve .
+
+http://localhost:3000/demo
