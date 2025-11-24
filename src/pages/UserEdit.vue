@@ -36,10 +36,10 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { getUserById } from '@/services/users';
-import { usersStore } from '@/store/users';
-import Button from '@/components/Button.vue';
-import Input from '@/components/Input.vue';
+import { getUserById } from '../services/users';
+import { usersStore } from '../store/users';
+import Button from '../components/Button.vue';
+import Input from '../components/Input.vue';
 
 const route = useRoute();
 const router = useRouter();

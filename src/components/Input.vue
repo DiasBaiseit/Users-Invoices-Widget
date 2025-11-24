@@ -5,7 +5,7 @@
     <input
       v-bind="$attrs"
       :value="modelValue"
-      @input="$emit('update:modelValue', $event.target.value)"
+      @input="onInput"
       class="input"
     />
 
@@ -14,15 +14,23 @@
 </template>
 
 <script setup lang="ts">
+import { defineProps, defineEmits } from 'vue';
+
+const emit = defineEmits(['update:modelValue'])
+
 defineOptions({ inheritAttrs: false })
 
 const props = defineProps({
   modelValue: { type: [String, Number], default: '' },
   label: { type: String, default: '' },
   error: { type: String, default: '' }
-})
+});
 
-defineEmits(['update:modelValue'])
+const onInput = (e: Event) => {
+  const target = e.target as HTMLInputElement | null
+  if (!target) return
+  emit('update:modelValue', target.value)
+};
 </script>
 
 <style scoped>

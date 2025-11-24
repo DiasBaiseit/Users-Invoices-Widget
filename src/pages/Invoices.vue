@@ -48,8 +48,8 @@
 <script setup>
 import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-import { invoicesStore } from '@/store/invoices';
-import Button from '@/components/Button.vue';
+import { invoicesStore } from '../store/invoices';
+import Button from '../components/Button.vue';
 
 const store = invoicesStore();
 const route = useRoute();

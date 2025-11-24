@@ -16,7 +16,7 @@
 <script setup>
 import { useRoute } from "vue-router";
 import { invoicesStore } from "@/store/invoices";
-import Button from "@/components/Button.vue";
+import Button from "../components/Button.vue";
 
 const route = useRoute();
 const store = invoicesStore();

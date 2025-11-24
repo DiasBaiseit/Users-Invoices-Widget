@@ -32,8 +32,8 @@
 import { reactive } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { invoicesStore } from "@/store/invoices";
-import Button from "@/components/Button.vue";
-import Input from "@/components/Input.vue";
+import Button from "../components/Button.vue";
+import Input from "../components/Input.vue";
 
 const route = useRoute();
 const router = useRouter();

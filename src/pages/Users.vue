@@ -52,9 +52,9 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
-import { usersStore } from '@/store/users';
-import Button from '@/components/Button.vue';
-import Input from '@/components/Input.vue';
+import { usersStore } from '../store/users';
+import Button from '../components/Button.vue';
+import Input from '../components/Input.vue';
 
 const store = usersStore();
 

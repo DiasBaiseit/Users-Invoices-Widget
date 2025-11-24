@@ -27,8 +27,8 @@
 <script setup lang="ts">
 import { onMounted, computed } from 'vue';
 import { useRoute } from 'vue-router';
-import { usersStore } from '@/store/users';
-import Button from '@/components/Button.vue';
+import { usersStore } from '../store/users';
+import Button from '../components/Button.vue';
 
 const store = usersStore();
 const route = useRoute();

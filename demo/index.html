@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Users Widget Demo</title>
+  <link rel="stylesheet" href="../dist/users-invoices-widget.css" />
+</head>
+<body>
+
+  <h1>Users Invoices Widget Demo</h1>
+
+  <div id="widget"></div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+  <script src="../dist/widget.umd.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.Widget.init({
+        element: "#widget"
+      });
+    });
+  </script>
+
+</body>
+</html>

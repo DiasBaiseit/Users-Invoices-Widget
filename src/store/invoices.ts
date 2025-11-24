@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { getInvoicesByUser } from '@/services/invoices';
+import { getInvoicesByUser } from '../services/invoices';
 
 export const invoicesStore = defineStore('invoices', {
   state: () => ({
